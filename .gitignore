@@ -1,4 +1,4 @@
 .venv
 .instance
-.migration
+.migrations
 __pycache__

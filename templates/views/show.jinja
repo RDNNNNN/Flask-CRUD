@@ -1,0 +1,14 @@
+{% extends "layout/base.jinja" %}
+
+{% block content %}
+<h1>商品編號：{{product.id}}</h1>
+<p>名稱：{{product.title}}</p>
+<p>價格：{{product.price}}</p>
+<article>{{product.desc}}</article>
+
+<a href="/{{product.id}}/edit">編輯</a>
+
+<form method="POST" action="/{{product.id}}/delete">
+    <button>刪除商品</button>
+</form>
+{% endblock content %}

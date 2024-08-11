@@ -1,0 +1,16 @@
+{% extends "layout/base.jinja" %}
+
+{% block content %}
+<h1>商品列表</h1>
+<a href="/new">新增</a>
+
+{% for product in products %}
+
+<div>
+    <h3><a href="/{{product.id}}">名稱：{{product.title}}</a></h3>
+    <p>價格：{{product.price}}</p>
+    <p>描述：{{product.desc}}</p>
+</div>
+
+{% endfor %}
+{% endblock content %}

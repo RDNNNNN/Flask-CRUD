@@ -1,0 +1,29 @@
+{% extends "layout/base.jinja" %}
+
+{% block content %}
+<h1>更新商品</h1>
+
+<form method="POST" action="/{{product.id}}">
+    <section>
+        <div>
+            <label>名稱：</label>
+            <input type="text" name="title" placeholder="商品名稱" value="{{product.title}}">
+        </div>
+
+        <div>
+            <label>價格：</label>
+            <input type="text" name="price" placeholder="商品價格" value="{{product.price}}">
+        </div>
+
+        <div>
+            <label>描述：</label>
+            <textarea name="desc">{{product.desc}}</textarea>
+        </div>
+
+        <div>
+            <button>確定更新</button>
+        </div>
+    </section>
+
+</form>
+{% endblock content %}

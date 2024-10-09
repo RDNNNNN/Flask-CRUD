@@ -1,7 +1,3 @@
-流程
---
-[流程影片](https://www.youtube.com/watch?v=NIcmCUzCDzE)
-
 執行步驟
 --
 1. `python -m venv .venv`
@@ -11,3 +7,5 @@
 5. `flask db migrate`
 6. `flask db upgrade`
 7. `flask run --debug`
+
+[流程影片](https://www.youtube.com/watch?v=NIcmCUzCDzE)
